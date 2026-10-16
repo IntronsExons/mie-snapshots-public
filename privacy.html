@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MIE Snapshots — confidentialité</title>
+<style>body{font:18px/1.65 system-ui,sans-serif;max-width:760px;margin:60px auto;padding:0 24px;color:#172a35;background:#f7fafb}a{color:#075b93}h1{line-height:1.2}</style>
+<main><a href="index.html">MIE Snapshots</a><h1>Confidentialité</h1>
+<p>MIE Snapshots est une application personnelle de sauvegarde de rapports macroéconomiques. Cette page décrit le fonctionnement du module de synchronisation Google Drive.</p>
+<h2>Données accessibles et finalités</h2>
+<p>L’application utilise l’autorisation Google Drive <code>drive.file</code>. Elle crée et retrouve ses dossiers, écrit ses rapports ZIP et JSON, lit leurs contenus et métadonnées pour contrôler leur intégrité, et applique la rétention. Elle n’effectue pas de recherche générale dans les autres documents du compte. Elle ne demande aucun accès à Gmail, aux contacts ou au calendrier Google.</p>
+<p>Les rapports contiennent les données et analyses produites par le collecteur. Si l’utilisateur y ajoute des informations privées, celles-ci font également partie des fichiers sauvegardés. Les métadonnées traitées incluent les noms, identifiants, tailles et empreintes des fichiers.</p>
+<h2>Stockage et sécurité</h2>
+<p>Les identifiants OAuth et jetons sont conservés dans une configuration privée sur le serveur de collecte. Ils ne sont pas intégrés aux rapports, aux pages publiques ou aux journaux applicatifs. Les transferts vers Google utilisent HTTPS. Des copies locales des rapports sont conservées pour la reprise après incident.</p>
+<h2>Partage et utilisation</h2>
+<p>Le module transmet les rapports à Google Drive pour le compte de son utilisateur. Il ne les rend pas publics, ne vend pas les données et ne les utilise pas pour la publicité. Il ne transmet pas automatiquement les fichiers à un service d’intelligence artificielle et n’entraîne aucun modèle. L’utilisateur peut choisir séparément de transmettre un rapport à un outil d’analyse ; cette action dépend alors du service choisi.</p>
+<p>L’utilisation et le transfert des informations reçues des API Google respectent le <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur dans les services d’API Google</a>, y compris ses exigences d’utilisation limitée.</p>
+<h2>Conservation et suppression</h2>
+<p>La conservation cible des archives de synchronisation est de 60 jours. La dernière archive publiée est conservée ; les archives non envoyées peuvent être gardées plus longtemps pendant une panne. Le nettoyage vise exclusivement les fichiers identifiés comme appartenant à l’application ; la présence de fichiers tiers peut empêcher leur suppression. Les fichiers Drive supprimés par le module suivent le mécanisme de corbeille de Google Drive.</p>
+<p>L’utilisateur peut révoquer l’accès depuis les connexions tierces de son compte Google et supprimer ses fichiers Drive. La révocation arrête les accès futurs mais ne supprime pas les copies déjà créées. Pour supprimer les copies locales ou arrêter définitivement la synchronisation, contacter l’administrateur de cette installation personnelle.</p>
+<h2>Contact et mises à jour</h2>
+<p>Utiliser l’adresse d’assistance affichée sur l’écran de consentement Google de MIE Snapshots. Cette page sera actualisée si le traitement des données change.</p>
+<p>Dernière mise à jour : 16 octobre 2026.</p></main></html>
